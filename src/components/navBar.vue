@@ -16,7 +16,7 @@
             Home
           </router-link>
           <router-link
-            to="/contrast"
+            to="/checker"
             class="text-zinc-600 hover:text-zinc-800 dark:text-zinc-300 dark:hover:text-white"
           >
             Contrast Checker
@@ -28,7 +28,7 @@
             Color Converter
           </router-link>
           <router-link
-            to="/palette"
+            to="/generator"
             class="text-zinc-600 hover:text-zinc-800 dark:text-zinc-300 dark:hover:text-white"
           >
             Palette Generator

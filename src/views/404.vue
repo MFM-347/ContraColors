@@ -1,20 +1,20 @@
 <template>
   <div
-    class="min-h-screen bg-gradient-to-br from-zinc-100 dark:from-zinc-800 to-zinc-200 dark:to-zinc-900 flex items-center justify-center px-4 sm:px-6 lg:px-8"
+    class="min-h-screen bg-gradient-to-br from-zinc-100 dark:from-zinc-900 to-zinc-300 dark:to-zinc-700 flex items-center justify-center px-4 sm:px-6 lg:px-8 transition-colors duration-300"
   >
     <div class="max-w-lg w-full space-y-8 text-center">
       <div class="relative">
         <h1
-          class="text-7xl sm:text-8xl font-extrabold text-primary-600 tracking-widest animate-pulse"
+          class="text-7xl sm:text-8xl font-extrabold text-primary-600 dark:text-primary-400 tracking-widest animate-pulse"
         >
           404
         </h1>
         <p
-          class="text-2xl md:text-3xl lg:text-5xl font-bold tracking-tight text-gray-900 mt-4"
+          class="text-2xl md:text-3xl lg:text-5xl font-bold tracking-tight text-gray-800 dark:text-gray-200 mt-4"
         >
           Uh-oh! Page not found
         </p>
-        <p class="mt-4 text-base text-gray-700">
+        <p class="mt-4 text-base text-gray-700 dark:text-gray-300">
           The page you are looking for might have been removed, had its name
           changed, or is temporarily unavailable.
         </p>
