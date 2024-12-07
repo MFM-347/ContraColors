@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 .bgc {
-  @apply bg-zinc-100 dark:bg-zinc-900 text-gray-900 dark:text-gray-100 transition-colors duration-200;
+  @apply bg-zinc-100 dark:bg-zinc-900 text-gray-900 dark:text-gray-100;
   min-height: 100vh;
   max-width: 100vw;
 }
@@ -25,41 +25,11 @@ label,
 .text,
 .btn,
 .inp {
-  font-family: "Karla", sans-serif !important;
-}
-.title {
-  @apply text-2xl text-center font-extrabold;
+  font-family: "Nunito Sans", sans-serif !important;
 }
 .btn {
-  @apply py-2 px-4 bg-zinc-300 dark:bg-zinc-700 hover:bg-zinc-400 dark:hover:bg-zinc-600 rounded-lg transition-colors duration-200;
+  @apply block mt-3 mb-5 mx-auto p-2.5 font-bold w-full rounded-lg text-gray-950 bg-primary-400 hover:bg-blue-500 dark:bg-primary-500 dark:hover:bg-primary-600 focus:ring-2 focus:ring-primary-300;
 }
-
-.ac {
-  @apply w-full h-auto grid place-items-center;
-}
-.app {
-  @apply bg-zinc-200 dark:bg-zinc-800 border border-black dark:border-white rounded-2xl w-[48rem] h-[36rem] p-8 shadow-lg transition-colors duration-200;
-}
-.sec {
-  @apply w-1/2 h-full;
-}
-.quote {
-  @apply h-fit w-full text-lg border border-black dark:border-white p-4 rounded-lg transition-colors duration-200;
-}
-.res {
-  @apply w-full h-auto mt-6 text-center text-lg;
-}
-@media (max-width: 540px) {
-  .ac {
-    @apply place-items-start;
-  }
-  .app {
-    @apply flex flex-col overflow-y-scroll w-full h-full scroll-auto;
-  }
-  .sec {
-    @apply w-full h-auto;
-  }
-  .res {
-    @apply mt-auto;
-  }
+.title {
+  @apply text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200;
 }

@@ -7,11 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "cls && npx prettier -w . && npm run dev"
+    "start": "clear && npx prettier -w . && npm run dev"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.1.0",
     "tinycolor2": "^1.6.0",
-    "vue": "^3.4.26"
+    "vue": "^3.4.26",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@vite-pwa/assets-generator": "^0.2.4",

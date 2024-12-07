@@ -1,7 +1,7 @@
 # ContraColors
 
-**ContraColors - Best Color Contrast Checker for Accessibility and UI Design**  
-Easily check color contrast ratios to improve accessibility, readability, and user experience. This fast, responsive tool helps web designers and developers ensure WCAG compliance with a clean, user-friendly interface. As a PWA, it works offline and adapts to any device. Enter colors, view results instantly, and enhance your designs with accessible.
+**ContraColors - Best Color Contrast Checker, Converter & Scheme Generator**  
+ContraColors is a powerful PWA web app built with Vue.js, offering essential tools for designers and developers. Easily check color contrast for accessibility, convert colors between formats, and generate beautiful color schemes. Perfect for improving web design and ensuring accessibility.
 
 ## License
 

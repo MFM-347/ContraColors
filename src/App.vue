@@ -1,22 +1,18 @@
 <script setup>
-import { ref, computed } from "vue";
-import vApp from "./components/vApp.vue";
-import PWABadge from "./components/PWABadge.vue";
-
-const isDark = ref(false);
-const theme = computed(() => (isDark.value ? "dark" : "light"));
-
-const toggle = () => {
-  isDark.value = !isDark.value;
-};
+import navBar from "@/components/navBar.vue";
+import PWABadge from "@/components/PWABadge.vue";
+import darkMode from "@/components/darkMode.vue";
+import { SpeedInsights } from "@vercel/speed-insights/vue";
 </script>
 
 <template>
-  <div class="bgc ac" :class="theme">
-    <vApp />
-    <button class="btn fixed bottom-4 right-4" @click="toggle">
-      Toggle Theme
-    </button>
+  <div class="bgc">
+    <navBar />
+    <main class="container mx-auto px-6 py-8">
+      <router-view></router-view>
+    </main>
     <PWABadge />
+    <darkMode />
+    <SpeedInsights />
   </div>
 </template>
