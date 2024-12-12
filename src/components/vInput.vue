@@ -1,4 +1,3 @@
-<!-- BASED ON tfs-input -->
 <template>
   <div class="flex flex-col gap-y-2">
     <label for="text">{{ label }}</label>
