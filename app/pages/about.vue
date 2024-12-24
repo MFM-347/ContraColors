@@ -16,7 +16,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="container py-20">
+  <div class="container py-16">
     <h1 class="title">About ContraColors</h1>
     <Card>
       <CardHeader>

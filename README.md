@@ -1,4 +1,4 @@
-# Explore ContraColors - The Ultimate Color Toolkit\*\*
+# Explore ContraColors - The Ultimate Color Toolkit
 
 Discover a robust set of tools designed for designers and developers to create, explore, and optimize color palettes effortlessly.
 

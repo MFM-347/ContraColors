@@ -62,7 +62,7 @@ const tools = [
 </script>
 
 <template>
-  <div class="container flex flex-col items-center py-20">
+  <div class="container flex flex-col items-center py-16">
     <div>
       <NuxtImg
         src="/favicon.svg"

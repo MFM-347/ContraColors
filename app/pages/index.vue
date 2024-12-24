@@ -16,7 +16,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="container flex flex-col lg:flex-row items-center py-20 gap-10">
+  <div class="container flex flex-col lg:flex-row items-center py-16 gap-10">
     <div class="flex-1 order-2 lg:order-1 text-center lg:text-left">
       <h1 class="title mb-4">Welcome to ContraColors</h1>
       <h2 class="text-3xl font-semibold mb-3">Best Color Tools</h2>
