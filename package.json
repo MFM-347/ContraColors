@@ -1,29 +1,42 @@
 {
   "name": "app",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "start": "clear && npx prettier -w . && npm run dev"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "start": "npx prettier -w . && cls && npm run dev"
   },
   "dependencies": {
-    "@vercel/speed-insights": "^1.1.0",
+    "@nuxt/icon": "^1.10.3",
+    "@nuxt/image": "^1.8.1",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "@radix-icons/vue": "^1.0.0",
+    "@vite-pwa/assets-generator": "^0.2.6",
+    "@vite-pwa/nuxt": "^0.10.5",
+    "@vueuse/core": "^12.1.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "nuxt": "^3.14.1592",
+    "radix-vue": "^1.9.11",
+    "shadcn-nuxt": "^0.11.3",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
     "tinycolor2": "^1.6.0",
-    "vue": "^3.4.26",
-    "vue-router": "^4.5.0"
+    "vite-plugin-pwa": "^0.20.5",
+    "vue": "latest",
+    "workbox-build": "^7.1.0",
+    "workbox-window": "^7.1.0"
   },
   "devDependencies": {
-    "@vite-pwa/assets-generator": "^0.2.4",
-    "@vitejs/plugin-vue": "^5.0.4",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.15",
-    "vite": "^5.2.10",
-    "vite-plugin-pwa": "^0.20.0",
-    "workbox-window": "^7.1.0"
+    "@types/tinycolor2": "^1.4.6",
+    "typescript": "^5.4.5",
+    "vue-tsc": "^2.1.4"
   },
   "overrides": {
     "sharp": "0.32.6",
