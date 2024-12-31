@@ -17,6 +17,7 @@
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@radix-icons/vue": "^1.0.0",
+    "@vercel/analytics": "^1.4.1",
     "@vite-pwa/assets-generator": "^0.2.6",
     "@vite-pwa/nuxt": "^0.10.5",
     "@vueuse/core": "^12.2.0",

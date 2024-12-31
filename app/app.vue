@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Analytics } from '@vercel/analytics/nuxt'
 import "./app.css";
 import "./type.css";
 import seo from "@/commons/seo";
@@ -30,5 +31,6 @@ useHead({
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
+    <Analytics/>
   </div>
 </template>
