@@ -1,12 +1,12 @@
 {
   "$schema": "https://shadcn-vue.com/schema.json",
-  "style": "new-york",
+  "style": "default",
   "typescript": true,
   "tsConfigPath": ".nuxt/tsconfig.json",
   "tailwind": {
-    "config": "tailwind.config.ts",
-    "css": "app/app.css",
-    "baseColor": "slate",
+    "config": "tailwind.config.js",
+    "css": "app/style.css",
+    "baseColor": "gray",
     "cssVariables": true,
     "prefix": ""
   },

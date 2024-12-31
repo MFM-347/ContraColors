@@ -4,6 +4,8 @@
 
 <template>
   <NavBar />
+  <Float class="fixed bottom-4 right-4" />
+  <div id="top"></div>
   <main class="container">
     <slot />
     <ClientOnly>

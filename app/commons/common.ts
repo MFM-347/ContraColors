@@ -1,18 +1,18 @@
 import tinycolor from "tinycolor2";
 
-const isDark = (color) => tinycolor(color).isDark();
+const isDark = (color: string): boolean => tinycolor(color).isDark();
 
-const copyToClipboard = (color) => {
+const copyToClipboard = (color: string): void => {
   navigator.clipboard
     .writeText(color)
     .then(() => {
-      alert(`Copied color: ${color}`);
+      console.log(`Copied color: ${color}`);
     })
     .catch((err) => {
-      console.error("Failed to copy: ", err);
+      console.error(`Failed to copy: ${err.message}`);
     });
 };
 
-const prClr = "#5c6bff";
+const prClr = "#244bf9";
 
 export { isDark, copyToClipboard, prClr };

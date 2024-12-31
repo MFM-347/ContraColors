@@ -1,66 +1,23 @@
 <template>
-  <header
-    class="flex items-center gap-x-1 p-1 rounded-md border bg-zinc-50 dark:bg-zinc-950"
-  >
-    <div class="flex justify-between w-full">
-      <div class="flex gap-2 overflow-x-auto scrollbar-hide">
-        <NuxtLink
-          v-for="route in routes"
-          :key="route.path"
-          :to="route.path"
-          class="lnk"
+  <header class="py-2 px-4 md:py-3 md:px-5 border-b">
+    <nav class="flex px-2 items-center">
+      <NuxtLink to="/" class="flex gap-1 items-start sm:items-center">
+        <span class="h text-xl sm:text-3xl font-extrabold text-primary"
+          >Contra</span
         >
-          {{ route.name }}
-        </NuxtLink>
-      </div>
-      <button @click="toggleDarkMode" class="lnk ml-2">Dark Mode</button>
-    </div>
+        <span class="h text-xl sm:text-3xl font-bold">Colors</span>
+      </NuxtLink>
+      <ul class="flex gap-3 sm:gap-6 ml-auto text-base sm:text-xl capitalize">
+        <li>
+          <NuxtLink to="/">Home</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/tools">Tools</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/about">About</NuxtLink>
+        </li>
+      </ul>
+    </nav>
   </header>
 </template>
-
-<script setup lang="ts">
-import { onMounted } from "vue";
-
-const routes = [
-  { name: "Home", path: "/" },
-  { name: "Tools", path: "/tools" },
-  { name: "About", path: "/about" },
-];
-
-const toggleDarkMode = () => {
-  const isDark = document.documentElement.classList.toggle("dark");
-  localStorage.setItem("dark-mode", isDark ? "enabled" : "disabled");
-};
-
-onMounted(() => {
-  if (localStorage.getItem("dark-mode") === "enabled") {
-    document.documentElement.classList.add("dark");
-  }
-});
-</script>
-
-<style scoped>
-header {
-  max-width: 100%;
-  overflow-x: hidden;
-  white-space: nowrap;
-}
-.lnk {
-  @apply inline-flex items-center justify-center gap-2 rounded-sm px-3 py-1.5 text-sm font-medium outline-none hover:bg-zinc-200 hover:dark:bg-zinc-800 whitespace-nowrap;
-}
-.scrollbar-hide {
-  scrollbar-width: none; /* Firefox */
-}
-.scrollbar-hide::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, and Opera */
-}
-@media (max-width: 768px) {
-  header {
-    padding: 0.5rem;
-  }
-  .lnk {
-    font-size: 0.875rem;
-    padding: 0.25rem 0.5rem;
-  }
-}
-</style>

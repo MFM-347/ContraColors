@@ -21,6 +21,8 @@ const color = ref(prClr);
 
 const colorInfo = computed(() => {
   const clr = tinycolor(color.value);
+  const mRClr = (c: string) =>
+    tinycolor.mostReadable(c, ["#ffffff", "#000000"]).toHexString();
   return {
     format: clr.getFormat(),
     isDark: clr.isDark(),
@@ -28,6 +30,7 @@ const colorInfo = computed(() => {
     isValid: clr.isValid(),
     luminance: clr.getLuminance().toFixed(2),
     brightness: clr.getBrightness(),
+    mostReadable: mRClr(clr.toHexString()),
     c: clr.toHexString(),
   };
 });
@@ -60,6 +63,7 @@ const colorInfo = computed(() => {
               <li>Is Valid: {{ colorInfo.isValid }}</li>
               <li>Luminance: {{ colorInfo.luminance }}</li>
               <li>Brightness: {{ colorInfo.brightness }}</li>
+              <li>Most Readable: {{ colorInfo.mostReadable }}</li>
             </ul>
           </div>
           <div>

@@ -4,38 +4,44 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --font-heading: "Roboto Condensed", sans-serif !important;
+    --font-normal: "Raleway", sans-serif !important;
+
+    --background: 0 0% 95%;
+    --background-ultra: #fbfbfb;
+    --foreground: 229 10% 3.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card-foreground: 229 10% 3.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover-foreground: 229 10% 3.9%;
 
-    --primary: 234 98% 68%;
-    --primary-foreground: 355.7 100% 97.3%;
+    --primary: 229, 95%, 60%;
+    --primary-foreground: 355.7 100% 97%;
+    --primary-hover: #1f3af1;
 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary: 229 4.8% 85.1%;
+    --secondary-foreground: 229 5.9% 10%;
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted: 229 4.8% 95.9%;
+    --muted-foreground: 229 3.8% 46.1%;
 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --accent: 229 4.8% 95.9%;
+    --accent-foreground: 229 5.9% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
+    --border: 229 5.9% 90%;
+    --input: 229 5.9% 90%;
     --ring: 142.1 76.2% 36.3%;
     --radius: 0.5rem;
   }
 
   .dark {
     --background: 20 14.3% 4.1%;
+    --background-ultra: #050404;
     --foreground: 0 0% 95%;
 
     --card: 24 9.8% 10%;
@@ -44,14 +50,15 @@
     --popover: 0 0% 9%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 235 80% 68%;
-    --primary-foreground: 144.9 80.4% 10%;
+    --primary: 229, 95%, 56%;
+    --primary-foreground: 231 80.4% 93%;
+    --primary-hover: #517fff;
 
-    --secondary: 240 3.7% 15.9%;
+    --secondary: 229 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
 
     --muted: 0 0% 15%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted-foreground: 229 5% 64.9%;
 
     --accent: 12 6.5% 15.1%;
     --accent-foreground: 0 0% 98%;
@@ -59,8 +66,8 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+    --border: 229 3.7% 15.9%;
+    --input: 229 3.7% 15.9%;
     --ring: 142.4 71.8% 29.2%;
   }
 }
@@ -72,41 +79,6 @@
   body {
     @apply bg-background text-foreground;
   }
-  .title {
-    font-size: calc(1.425rem + 2.1vw);
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 8px 0;
-  }
-  body,
-  p,
-  div,
-  span,
-  label,
-  input,
-  textarea,
-  button,
-  a .text,
-  .btn {
-    @apply font-SourceSans3;
-  }
-  h1,
-  .h1,
-  h2,
-  .h2,
-  h3,
-  .h3,
-  h4,
-  .h4,
-  h5,
-  .h5,
-  h6,
-  .h6,
-  .heading,
-  .title,
-  .sub-heading {
-    @apply font-Oswald;
-  }
 }
 .sc {
   /*  Sub Card  */
@@ -114,11 +86,4 @@
 }
 .sc p {
   @apply text-lg md:text-xl;
-}
-h1,
-h2,
-h3 {
-  font-size: inherit;
-  font-size: 24px;
-  letter-spacing: 1px;
 }

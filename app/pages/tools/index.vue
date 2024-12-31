@@ -62,7 +62,7 @@ const tools = [
 </script>
 
 <template>
-  <div class="container flex flex-col items-center py-16">
+  <div class="container flex flex-col items-center py-12">
     <div>
       <NuxtImg
         src="/favicon.svg"
@@ -78,7 +78,11 @@ const tools = [
     <div
       class="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-10"
     >
-      <Card v-for="tool in tools" :key="tool.name" class="shadow-lg">
+      <Card
+        v-for="tool in tools"
+        :key="tool.name"
+        class="shadow-md font-normal"
+      >
         <CardHeader>
           <CardTitle class="flex items-center gap-2">
             <Icon :name="tool.icon" class="text-3xl" />
@@ -94,7 +98,10 @@ const tools = [
           </p>
         </CardContent>
         <CardFooter>
-          <NuxtLink :to="tool.link" class="text-blue-500 hover:underline">
+          <NuxtLink
+            :to="tool.link"
+            class="text-blue-500 font-semibold hover:underline"
+          >
             Go to {{ tool.name }}
           </NuxtLink>
         </CardFooter>

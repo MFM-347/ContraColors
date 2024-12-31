@@ -24,8 +24,8 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      Oswald: true,
-      "Source+Sans+3": true,
+      "Roboto+Condensed": [700, 800],
+      Raleway: "300..600",
     },
   },
 
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
       short_name: "Contra",
       description:
         "Transform your design workflow with ContraColors. Blend, convert, and generate accessible color palettes using our comprehensive color tools.",
-      theme_color: "#5c6bff",
+      theme_color: "#244bf9",
     },
 
     workbox: {

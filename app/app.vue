@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import "./app.css";
+import "./type.css";
 import seo from "@/commons/seo";
 
 useSeoMeta({

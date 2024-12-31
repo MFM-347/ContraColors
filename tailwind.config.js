@@ -2,9 +2,11 @@ import animate from "tailwindcss-animate";
 
 /** @type {import('tailwindcss').Config} */
 export default {
+  content: ["app/**/*.{ts,tsx,vue}"],
   darkMode: ["class"],
   safelist: ["dark"],
   prefix: "",
+
   theme: {
     container: {
       center: true,
@@ -18,11 +20,15 @@ export default {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
+        background: {
+          DEFAULT: "hsl(var(--background))",
+          ultra: "var(--background-ultra)",
+        },
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "var(--primary-hover)",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -79,10 +85,6 @@ export default {
         "collapsible-down": "collapsible-down 0.2s ease-in-out",
         "collapsible-up": "collapsible-up 0.2s ease-in-out",
       },
-    },
-    fontFamily: {
-      Oswald: "Oswald, sans-serif",
-      SourceSans3: "Source Sans 3, sans-serif",
     },
   },
   plugins: [animate],

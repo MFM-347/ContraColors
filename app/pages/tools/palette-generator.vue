@@ -24,10 +24,16 @@ const palette = computed(() => {
   switch (selected.value) {
     case "complementary":
       return [clr.toHexString(), clr.complement().toHexString()];
+    case "analogous":
+      return clr.analogous().map((c) => c.toHexString());
+    case "monochromatic":
+      return clr.monochromatic().map((c) => c.toHexString());
     case "triadic":
       return clr.triad().map((c) => c.toHexString());
     case "tetradic":
       return clr.tetrad().map((c) => c.toHexString());
+    case "splitcomplement":
+      return clr.splitcomplement().map((c) => c.toHexString());
     default:
       return [];
   }
@@ -53,12 +59,24 @@ const palette = computed(() => {
           <Label for="complementary">Complementary</Label>
         </div>
         <div class="flex items-center space-x-2">
+          <RadioGroupItem id="analogous" value="analogous" />
+          <Label for="analogous">Analogous</Label>
+        </div>
+        <div class="flex items-center space-x-2">
+          <RadioGroupItem id="monochromatic" value="monochromatic" />
+          <Label for="monochromatic">Monochromatic</Label>
+        </div>
+        <div class="flex items-center space-x-2">
           <RadioGroupItem id="triadic" value="triadic" />
           <Label for="triadic">Triadic</Label>
         </div>
         <div class="flex items-center space-x-2">
           <RadioGroupItem id="tetradic" value="tetradic" />
           <Label for="tetradic">Tetradic</Label>
+        </div>
+        <div class="flex items-center space-x-2">
+          <RadioGroupItem id="splitcomplement" value="splitcomplement" />
+          <Label for="splitcomplement">Split Complement</Label>
         </div>
       </RadioGroup>
     </div>
