@@ -1,6 +1,6 @@
 const seo = {
   app: {
-    title: "ContraColors 🎨",
+    title: "ContraColors",
     url: "https://contracolors.vercel.app",
     description:
       "Transform your design workflow with ContraColors. Blend, convert, and generate accessible color palettes using our comprehensive color tools.",

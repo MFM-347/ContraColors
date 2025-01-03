@@ -20,7 +20,14 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxt/icon",
     "@nuxt/image",
+    "@nuxtjs/sitemap",
+    "@nuxtjs/robots",
   ],
+
+  site: {
+    url: "https://contra-colors.vercel.app/",
+    name: "ContraColors",
+  },
 
   googleFonts: {
     families: {
